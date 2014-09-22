@@ -1,0 +1,9 @@
+filename;description;version;url
+CC.exe;ccwpf;0.3.1414.0;http://github.com/X13home/x13home.github.com/raw/bin_main/bin/CC.exe
+engine.exe;Engine;0.3.1421.4;http://github.com/X13home/x13home.github.com/raw/bin_main/bin/engine.exe
+ExtStatements.dll;ExtStatements;0.3.1406.0;http://github.com/X13home/x13home.github.com/raw/master/Download/ExtStatements.dll
+HttpServer.dll;HttpServerWS;0.3.1422.2;http://github.com/X13home/x13home.github.com/raw/bin_HttpServer/bin/HttpServer.dll
+websocket-sharp.dll;websocket-sharp;1.0.2.16376;http://github.com/X13home/x13home.github.com/raw/bin_HttpServer/bin/websocket-sharp.dll
+MQTTS.dll;mqtts;0.3.1421.4;http://github.com/X13home/x13home.github.com/raw/bin_main/bin/MQTTS.dll
+PersistentStorage.dll;PersistentStorage_v4;0.3.1421.4;http://github.com/X13home/x13home.github.com/raw/bin_main/bin/PersistentStorage.dll
+X13Svc.exe;X13Svc;0.3.1414.0;http://github.com/X13home/x13home.github.com/raw/bin_main/bin/X13Svc.exe

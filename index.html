@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="keywords" content="MQTT,MQTT-S,MQTTS,automation system,FBD,smart home">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <title>X13.Home - an open source home automation system</title>
+  <meta http-equiv="Refresh" content="1; URL=http://x13home.github.io/index_en.html">
+</head>
+<body>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script type="text/javascript" src="js/jquery.cookie.js"></script>
+  <script type="text/javascript">
+    var lang = $.cookie('lang') || (navigator.language || navigator.systemLanguage).toLowerCase().substr(0, 2);
+    //var newpage = "http://x13home.org/";
+    var newpage = "http://"+window.location.host+"/";
+    if (lang == "ru") {
+      newpage = newpage + 'index_ru.html';
+    } else {
+      newpage = newpage + 'index_en.html';
+    }
+    window.location.replace ? window.location.replace(newpage) : window.location = newpage
+  </script>
+</body>
+</html>
