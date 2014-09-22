@@ -1,0 +1,54 @@
+How to use?
+
+# Run on Windows
+ Unpack bin_main.zip
+ Run bin\CC.exe
+ Select Embedded Engine and click Ok
+ 
+
+# Install as Service on Ubuntu.
+
+# install mono
+# Need a devel or complete version
+# runtime version does not contain all of the necessary libraries
+sudo apt-get install mono-devel mono-4.0-service
+
+# Add user MQTT and group
+sudo adduser mqtt
+# User MQTT can use serial ports
+sudo addgroup mqtt dialout
+
+# Copy data to mqtt home directory
+# switch to user mqtt, or you can use chown
+sudo su mqtt
+cp -rf bin /home/mqtt
+cp -rf data /home/mqtt
+exit
+
+
+# install autostart script or >>>
+#check path to mono-service
+sudo find / -name mono-service
+#If path is different as '/usr/local/bin/mono-service', correct the variable DAEMON in the file X13Svc
+sudo chmod 755 X13Svc
+sudo cp X13Svc /etc/init.d
+#install as service
+sudo update-rc.d X13Svc defaults
+#to remove service > sudo update-rc.d -f X13Svc remove
+# restart system 
+sudo reboot
+
+# >>> start a service manually
+# switch to user mqtt
+sudo su mqtt
+# start as service
+mono-service -d:/home/mqtt/bin -l:/tmp/X13Svc.lock /home/mqtt/bin/X13Svc.exe
+
+# >>> start as console app
+sudo su mqtt
+cd ~/bin
+mono Engine.exe
+
+# for configuration with CC.exe for windows
+# use username: root
+# password shown in /home/mqtt/data/security.xst
