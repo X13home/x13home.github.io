@@ -83,13 +83,21 @@
         <div class="pure-u-1">
           <h2>Latest News</h2>
           <ul>
-            <li>May 16, 2015 <b>Software v. 0.3.1520</b>
+            <li>Mai 26, 2015 <b>Software v. 0.3.1520</b>
               <ul>
-                <li>Fixed HTTP[s]</li>
-                <li>Fixed WsSync Client</li>
+                <li>MQTT-SN.serial add configuration blacklist & whitelist.<br />
+                    Examle: [Engine.xst]<br />
+                  <textarea rows="5" cols="80" style="border:inset 2px black;"><item name="MQTT-SN.Serial">
+  <item name="blacklist" value="COM17" saved="True" type="string" />
+  <item name="enable" value="true" saved="True" type="bool" />
+  <item name="whitelist" value="COM1;COM9" saved="True" type="string" />
+</item>           </textarea>
+                </li>
                 <li>Updated 'NewWave' firmware.</li>
+                <li>Updated library WS#</li>
               </ul>
             </li>
+
             <li>September 23, 2014 <b>Software v. 0.3.1439 </b>
               <ul>
                 <li>Fixed url in the updater </li>

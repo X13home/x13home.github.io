@@ -84,11 +84,18 @@
           <h3>
             Новости проекта</h3>
           <ul>
-            <li>15 Мая 2015 <b>Software v. 0.3.1520</b>
+            <li>26 мая 2015 <b>Software v. 0.3.1520</b>
               <ul>
-                <li>Исправлены мелкие неточности в HTTP[s]</li>
-                <li>Исправлен WsSync Client</li>
+                <li>MQTT-SN.serial добавлены настройки blacklist и whitelist.<br />
+                    пример использования: [файл Engine.xst]<br />
+                  <textarea rows="5" cols="80" style="border:inset 2px black;"><item name="MQTT-SN.Serial">
+  <item name="blacklist" value="COM17" saved="True" type="string" />
+  <item name="enable" value="true" saved="True" type="bool" />
+  <item name="whitelist" value="COM1;COM9" saved="True" type="string" />
+</item>           </textarea>
+                </li>
                 <li>Обновлена прошивка ветки 3</li>
+                <li>Обновлена библиотека WS#</li>
               </ul>
             </li>
             <li>23 сентября 2014 <b>Software v. 0.3.1439</b>
