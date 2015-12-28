@@ -22,7 +22,11 @@ sudo addgroup mqtt dialout
 # switch to user mqtt, or you can use chown
 sudo su mqtt
 cp -rf bin /home/mqtt
-cp -rf data /home/mqtt
+
+#delete unusable on Linux files 
+cd /home/mqtt/bin
+rm AvalonDock.dll AvalonDock.Themes.dll CC.exe WPFToolkit.Extended.dll
+
 exit
 
 
@@ -47,7 +51,7 @@ mono-service -d:/home/mqtt/bin -l:/tmp/X13Svc.lock /home/mqtt/bin/X13Svc.exe
 # >>> start as console app
 sudo su mqtt
 cd ~/bin
-mono Engine.exe
+mono engine.exe
 
 # for configuration with CC.exe for windows
 # use username: root
