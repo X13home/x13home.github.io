@@ -2,11 +2,11 @@ filename;description;version;url
 X13Svc.exe;X13Svc;0.316.407.0;http://github.com/X13home/x13home.github.io/raw/bin_main/bin/X13Svc.exe
 engine.exe;Engine;0.316.407.0;http://github.com/X13home/x13home.github.io/raw/bin_main/bin/engine.exe
 ExtStatements.dll;ExtStatements;0.3.1406.0;http://x13home.github.io/Download/ExtStatements.dll
-HttpServer.dll;HttpServerWS;0.316.411.200;http://github.com/X13home/x13home.github.io/raw/bin_HttpServer/bin/HttpServer.dll
+HttpServer.dll;HttpServerWS;0.316.414.500;http://github.com/X13home/x13home.github.io/raw/bin_HttpServer/bin/HttpServer.dll
 MQTT-SN.dll;MQTT-SN;0.316.407.0;http://github.com/X13home/x13home.github.io/raw/bin_main/bin/MQTT-SN.dll
 PersistentStorage.dll;PersistentStorage_v4;0.316.407.0;http://github.com/X13home/x13home.github.io/raw/bin_main/bin/PersistentStorage.dll
 CC.exe;cc_ejs;0.316.407.0;http://github.com/X13home/x13home.github.io/raw/bin_main/bin/CC.exe
-websocket-sharp.dll;websocket-sharp;1.0.2.36589;http://github.com/X13home/x13home.github.io/raw/bin_HttpServer/bin/websocket-sharp.dll
+websocket-sharp.dll;websocket-sharp;1.0.2.42043;http://github.com/X13home/x13home.github.io/raw/bin_HttpServer/bin/websocket-sharp.dll
 Newtonsoft.Json.dll;Json.NET .NET 4.0;8.0.3.19514;http://github.com/X13home/x13home.github.io/raw/bin_HttpServer/bin/Newtonsoft.Json.dll
 ICSharpCode.AvalonEdit.dll;ICSharpCode.AvalonEdit;5.0.1.0;http://github.com/X13home/x13home.github.io/raw/bin_HttpServer/bin/ICSharpCode.AvalonEdit.dll
 NiL.JS.dll;NiL.JS;2.1.883.0;http://github.com/X13home/x13home.github.io/raw/bin_HttpServer/bin/NiL.JS.dll
