@@ -7,5 +7,5 @@ PersistentStorage.dll;PersistentStorage_v4;0.316.614.100;http://github.com/X13ho
 CC.exe;cc_ejs;0.316.611.0;http://github.com/X13home/x13home.github.io/raw/bin_main/bin/CC.exe
 websocket-sharp.dll;websocket-sharp;1.0.2.42043;http://github.com/X13home/x13home.github.io/raw/bin_HttpServer/bin/websocket-sharp.dll
 Newtonsoft.Json.dll;Json.NET .NET 4.0;8.0.3.19514;http://github.com/X13home/x13home.github.io/raw/bin_main/bin/Newtonsoft.Json.dll
-ICSharpCode.AvalonEdit.dll;ICSharpCode.AvalonEdit;5.0.1.0;http://github.com/X13home/x13home.github.io/raw/bin_HttpServer/bin/ICSharpCode.AvalonEdit.dll
+ICSharpCode.AvalonEdit.dll;ICSharpCode.AvalonEdit;5.0.1.0;http://github.com/X13home/x13home.github.io/raw/bin_main/bin/ICSharpCode.AvalonEdit.dll
 NiL.JS.dll;NiL.JS;2.1.883.6;http://github.com/X13home/x13home.github.io/raw//bin_main/bin/NiL.JS.dll
