@@ -1,58 +1,61 @@
 How to use?
 
-# Run on Windows
- Unpack bin_main.zip
- Run bin\CC.exe
- Select Embedded Engine and click Ok
- 
+# Windows only
 
-# Install as Service on Ubuntu.
+# download server files
+http://github.com/X13home/x13home.github.io/archive/bin_Server.zip
+unpack x13home.github.io-bin_Server.zip
 
-# install mono
-# Need a devel or complete version
-# runtime version does not contain all of the necessary libraries
-sudo apt-get install mono-devel mono-4.0-service
+copy file 
+    from x13home.github.io-bin_Client\bin
+    to   x13home.github.io-bin_Server\bin 
 
-# Add user MQTT and group
-sudo adduser mqtt
-# User MQTT can use serial ports
-sudo addgroup mqtt dialout
+cd x13home.github.io-bin_Server\bin
 
-# Copy data to mqtt home directory
-# switch to user mqtt, or you can use chown
-sudo su mqtt
-cp -rf bin /home/mqtt
+###########################################################################
 
-#delete unusable on Linux files 
-cd /home/mqtt/bin
-rm AvalonDock.dll AvalonDock.Themes.dll CC.exe WPFToolkit.Extended.dll
+If you want use embedded engine
 
-exit
+Start client:
+    CC.exe
 
+At the first start, select the 1st item: Embedded Engine
 
-# install autostart script or >>>
-#check path to mono-service
-sudo find / -name mono-service
-#If path is different as '/usr/local/bin/mono-service', correct the variable DAEMON in the file X13Svc
-sudo chmod 755 X13Svc
-sudo cp X13Svc /etc/init.d
-#install as service
-sudo update-rc.d X13Svc defaults
-#to remove service > sudo update-rc.d -f X13Svc remove
-# restart system 
-sudo reboot
+###########################################################################
 
-# >>> start a service manually
-# switch to user mqtt
-sudo su mqtt
-# start as service
-mono-service -d:/home/mqtt/bin -l:/tmp/X13Svc.lock /home/mqtt/bin/X13Svc.exe
+If you want install local server as service
 
-# >>> start as console app
-sudo su mqtt
-cd ~/bin
-mono engine.exe
+Start client as Administartor:
+    CC.exe
 
-# for configuration with CC.exe for windows
-# use username: root
-# password shown in /home/mqtt/data/security.xst
+At the first start, select second item: Install Engine as service.
+
+###########################################################################
+
+If you want use local server as application
+
+Start server:
+    engine.exe
+
+Start client:
+    CC.exe
+
+At the first start, select the last item.
+Don't change the URL, user name and password.
+Must be:
+    URL:        Localhost
+    username:   local
+    password:
+
+###########################################################################
+
+If you want use another server.
+
+Start client:
+    CC.exe
+
+At the first start, select the last item.
+URL: Enter server IP or name.
+Select user name: root
+password shown in server directory, file data\security.xst, 
+         record <item name="root" value="password here"...../>
