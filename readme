@@ -25,7 +25,7 @@ sudo addgroup mqtt dialout
 # Download Server
 wget http://github.com/X13home/x13home.github.io/archive/bin_Server.zip
 # Unzip  x13home.github.io-bin_Server.zip
-unzip http://github.com/X13home/x13home.github.io/archive/bin_Server.zip
+unzip bin_Server.zip
 
 # Copy data to mqtt home directory
 # switch to user mqtt, or you can use chown
@@ -49,7 +49,7 @@ sudo service X13Svc start
 # or restart system
 sudo reboot
 
-# >>> start a service manually
+# >>> start a service manually in background
 # switch to user mqtt
 sudo su mqtt
 # start as service
