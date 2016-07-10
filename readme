@@ -2,8 +2,12 @@ How to use?
 
 ################################################
 # Windows
-Unpack bin_Server.zip
-Run bin\engine.exe
+
+# Download Server
+URL: http://github.com/X13home/x13home.github.io/archive/bin_Server.zip
+
+unzip  x13home.github.io-bin_Server.zip
+Run    bin\engine.exe
 
 ################################################
 # Linux
@@ -20,26 +24,16 @@ sudo addgroup mqtt dialout
 
 # Download Server
 wget http://github.com/X13home/x13home.github.io/archive/bin_Server.zip
+# Unzip  x13home.github.io-bin_Server.zip
+unzip http://github.com/X13home/x13home.github.io/archive/bin_Server.zip
 
 # Copy data to mqtt home directory
 # switch to user mqtt, or you can use chown
 sudo su mqtt
-cp -rf bin /home/mqtt
-
-
-
- 
+cd x13home.github.io-bin_Server
+cp -rf bin /home/mqtt/
 
 # Install as Service on Ubuntu.
-
-
-
-#delete unusable on Linux files 
-cd /home/mqtt/bin
-rm AvalonDock.dll AvalonDock.Themes.dll CC.exe WPFToolkit.Extended.dll
-
-exit
-
 
 # install autostart script or >>>
 #check path to mono-service
@@ -50,7 +44,9 @@ sudo cp X13Svc /etc/init.d
 #install as service
 sudo update-rc.d X13Svc defaults
 #to remove service > sudo update-rc.d -f X13Svc remove
-# restart system 
+# start service
+sudo service X13Svc start
+# or restart system
 sudo reboot
 
 # >>> start a service manually
