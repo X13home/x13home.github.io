@@ -1,12 +1,12 @@
 How to use?
 
-# Run on Windows
- Unpack bin_main.zip
- Run bin\CC.exe
- Select Embedded Engine and click Ok
- 
+################################################
+# Windows
+Unpack bin_Server.zip
+Run bin\engine.exe
 
-# Install as Service on Ubuntu.
+################################################
+# Linux
 
 # install mono
 # Need a devel or complete version
@@ -18,10 +18,21 @@ sudo adduser mqtt
 # User MQTT can use serial ports
 sudo addgroup mqtt dialout
 
+# Download Server
+wget http://github.com/X13home/x13home.github.io/archive/bin_Server.zip
+
 # Copy data to mqtt home directory
 # switch to user mqtt, or you can use chown
 sudo su mqtt
 cp -rf bin /home/mqtt
+
+
+
+ 
+
+# Install as Service on Ubuntu.
+
+
 
 #delete unusable on Linux files 
 cd /home/mqtt/bin
