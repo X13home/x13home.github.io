@@ -14,7 +14,7 @@ copy files
     from x13home.github.io-bin_Server\bin
     to   x13home.github.io-bin_Client\bin
 
-cd x13home.github.io-bin_Server\bin
+cd x13home.github.io-bin_Client\bin
 
 ###########################################################################
 
