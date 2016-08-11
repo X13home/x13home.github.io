@@ -2,19 +2,12 @@ How to use?
 
 # Windows only
 
-# download client files
+# download files
 http://github.com/X13home/x13home.github.io/archive/bin_Client.zip
 unpack x13home.github.io-bin_Client.zip
 
-# download server files
-http://github.com/X13home/x13home.github.io/archive/bin_Server.zip
-unpack x13home.github.io-bin_Server.zip
-
-copy files
-    from x13home.github.io-bin_Server\bin
-    to   x13home.github.io-bin_Client\bin
-
 cd x13home.github.io-bin_Client\bin
+
 
 ###########################################################################
 
